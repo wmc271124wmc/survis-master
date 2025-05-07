@@ -1,94 +1,95 @@
-# Multi-Agent LLM Systems: Interactive Literature Review
+# 🚀 Multi-Agent LLM Systems: Interactive Literature Review
 
-[![COMP4126 Research Methods](https://img.shields.io/badge/Course-COMP4126_Research_Methods-blue)](https://www.example.com/course_link) This repository contains an interactive visualization of a literature review on multi-agent Large Language Model (LLM) systems. This project was created as part of the COMP4126 Research Methods coursework and is powered by [SurVis](https://github.com/fabian-beck/survis), a visual literature browser framework.
+[![Course: COMP4126 Research Methods](https://img.shields.io/badge/Course-COMP4126_Research_Methods-blue.svg)](https://www.example.com/course_link) 
+[![Status: Coursework Complete](https://img.shields.io/badge/Status-Coursework_Complete-green.svg)]()
 
-## Overview
+This repository hosts an interactive visualization of a literature review focused on **Multi-Agent Large Language Model (LLM) Systems**. Developed as part of the COMP4126 Research Methods coursework, this project leverages [SurVis](https://github.com/fabian-beck/survis), a visual literature browser framework, to provide an engaging way to explore key research in this domain.
 
-This interactive literature browser presents a curated collection of 10 key papers exploring diverse approaches to multi-agent LLM systems. The papers are categorized based on their primary agent interaction paradigms, application domains, and memory integration approaches, facilitating a structured exploration of this rapidly emerging research field.
+## 📖 Table of Contents
 
-## Table of Contents
+Navigate through the review using the sections below:
 
-- [Literature Categorization](#literature-categorization)
-  - [Self-Improvement Methods](#self-improvement-methods)
-  - [Debate-Based Methods](#debate-based-methods)
-  - [Role-Based Collaboration Frameworks](#role-based-collaboration-frameworks)
-  - [Game-Theoretic Approaches](#game-theoretic-approaches)
-  - [Cross-cutting Dimensions](#cross-cutting-dimensions)
-- [How to Use the Visualization](#how-to-use-the-visualization)
-- [Technical Information](#technical-information)
-- [Paper Selection Methodology](#paper-selection-methodology)
-- [About the Coursework](#about-the-coursework)
-- [Credits](#credits)
-- [License](#license)
-- [Contributing](#contributing)
+* [Literature Categorization](#📚-literature-categorization)
+    * [Self-Improvement Methods](#1-self-improvement-methods)
+    * [Debate-Based Methods](#2-debate-based-methods)
+    * [Role-Based Collaboration Frameworks](#3-role-based-collaboration-frameworks)
+    * [Game-Theoretic Approaches](#4-game-theoretic-approaches)
+    * [Cross-cutting Dimensions](#cross-cutting-dimensions)
+* [🚀 How to Use the Visualization](#🚀-how-to-use-the-visualization)
+* [🛠️ Technical Information](#🛠️-technical-information)
+* [🔎 Paper Selection Methodology](#🔎-paper-selection-methodology)
+* [🎓 About the Coursework](#🎓-about-the-coursework)
+* [💻 Local Installation](#💻-local-installation)
+* [🙏 Credits](#🙏-credits)
+* [📜 License](#📜-license)
+* [🤝 Contributing](#🤝-contributing)
 
-## Literature Categorization
+## 📚 Literature Categorization
 
-The papers are organized into four main categories based on how LLM agents interact:
+The selected papers are organized into four primary categories based on the nature of LLM agent interactions:
 
 ### 1. Self-Improvement Methods
-Papers focusing on agents learning from their own experiences or reflections.
+_Papers focusing on agents learning and refining their approaches from their own experiences or internal reflections._
 * *Reflexion: Language Agents with Verbal Reinforcement Learning*
 * *Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback*
 * *Unleashing Cognitive Synergy through Multi-Persona Self-Collaboration*
 
 ### 2. Debate-Based Methods
-Papers using structured argumentation between multiple agents.
+_Papers employing structured argumentation and discussion between multiple agents to achieve outcomes._
 * *Improving Factuality and Reasoning through Multiagent Debate*
 * *Encouraging Divergent Thinking through Multi-Agent Debate*
 * *ChatEval: Towards Better LLM-Based Evaluators Through Multi-Agent Debate*
 
 ### 3. Role-Based Collaboration Frameworks
-Papers establishing structured workflows with specialized agent roles.
+_Papers that establish structured workflows where agents assume specialized roles to collaborate on tasks._
 * *CAMEL: Communicative Agents for Mind Exploration*
 * *MetaGPT: Meta Programming for Multi-Agent Collaboration*
 * *Multi-Agent Collaboration: Harnessing Intelligent LLM Agents*
 
 ### 4. Game-Theoretic Approaches
-Papers applying multi-agent interaction to game scenarios.
+_Papers applying principles of multi-agent interaction within game scenarios or game-like environments._
 * *Exploring LLMs for Communication Games: An Empirical Study on Werewolf*
 
 ### Cross-cutting Dimensions
-The literature is also analyzed across:
-* **Application Domains:** Code generation, reasoning, negotiation, evaluation.
-* **Memory Integration Approaches:** External memory, in-context experience, no explicit memory.
+Beyond these categories, the literature is also analyzed across several key dimensions:
+* **Application Domains:** Including code generation, reasoning, negotiation, and evaluation.
+* **Memory Integration Approaches:** Such as external memory, in-context experience, or no explicit memory.
 
-## How to Use the Visualization
+## 🚀 How to Use the Visualization
 
-1.  **Filtering:** Use the tag selectors at the top of the visualization page to filter papers by categories, application domains, or memory integration approaches.
-2.  **Searching:** Utilize the search box to find papers by author, title, or specific keywords.
-3.  **Visualization Modes:** Explore different visualization modes (if available in your SurVis setup) to understand relationships and patterns among the papers.
-4.  **Details on Demand:** Click on any paper in the visualization to expand and read its full abstract and other details.
+The interactive SurVis interface allows you to:
 
-## Technical Information
+1.  **Filter:** Use the tag selectors at the top of the page to narrow down papers by categories, application domains, or memory integration approaches.
+2.  **Search:** Employ the search box to locate papers by author, title, or specific keywords.
+3.  **Explore Visualization Modes:** Switch between different views (if your SurVis setup offers them) to understand relationships and patterns within the literature.
+4.  **View Details:** Click on any paper entry to expand its full abstract and other relevant details.
 
-This visualization was created using [SurVis](https://github.com/fabian-beck/survis), a framework for Visual Literature Browsers developed by Beck et al. The literature data is stored in BibTeX format (`.bib`) and converted to JSON (`.json`) for the interactive visualization.
+## 🛠️ Technical Information
 
-## Paper Selection Methodology
+* This visualization is built using [SurVis](https://github.com/fabian-beck/survis), a framework by Beck et al., designed for creating visual literature browsers.
+* The core literature data is stored in BibTeX format (`.bib`) and has been converted to JSON (`.json`) to power the interactive features.
 
-The selection process involved a systematic search focusing on influential multi-agent LLM research published primarily in 2023. The chosen works represent key developments and diverse approaches within the field.
+## 🔎 Paper Selection Methodology
 
-## About the Coursework
+The 10 papers featured in this review were chosen through a systematic search process. The focus was on influential research in multi-agent LLM systems, primarily published in 2023. These works were selected to represent key developments and diverse methodological approaches shaping the field.
 
-This interactive visualization serves as a component of a comprehensive literature review on multi-agent LLM systems for the COMP4126 Research Methods course. The full literature review encompasses:
+## 🎓 About the Coursework
 
-* An analysis of current challenges in the research field.
-* A clearly defined scope for the survey.
+This interactive visualization is a key component of a comprehensive literature review on multi-agent LLM systems, submitted for the COMP4126 Research Methods course. The full review also includes:
+
+* An analysis of current challenges and open questions in the research field.
+* A clearly defined scope for the literature survey.
 * Detailed summaries of each selected paper, organized by the categories outlined above.
-* An in-depth discussion of emerging research trends and future directions.
+* An in-depth discussion of emerging research trends and potential future directions.
+  
 
-## Credits
+## 📜 License
 
-* **Visualization Framework:** [SurVis](https://github.com/fabian-beck/survis) by Fabian Beck et al.
-* All papers included in the visualization are properly cited with links to their original sources.
+The SurVis framework is provided under its original license (please refer to the [SurVis repository](https://github.com/fabian-beck/survis) for specific details, typically MIT).
 
-## License
+## 🤝 Contributing
 
-The SurVis framework is provided under its original license (please refer to the [SurVis repository](https://github.com/fabian-beck/survis) for specific details).
-
-## Contributing
-
-This project is primarily an academic coursework submission. However, if you have suggestions for improving the README or find issues with the visualization setup, feel free to open an issue.
+While this project is primarily an academic coursework submission, suggestions for improving this README or reports of issues with the visualization setup are welcome. Please feel free to open an issue on GitHub.
 
 ---
 
