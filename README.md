@@ -19,8 +19,6 @@ Navigate through the review using the sections below:
 * [🛠️ Technical Information](#🛠️-technical-information)
 * [🔎 Paper Selection Methodology](#🔎-paper-selection-methodology)
 * [🎓 About the Coursework](#🎓-about-the-coursework)
-* [💻 Local Installation](#💻-local-installation)
-* [🙏 Credits](#🙏-credits)
 * [📜 License](#📜-license)
 * [🤝 Contributing](#🤝-contributing)
 
@@ -82,7 +80,6 @@ This interactive visualization is a key component of a comprehensive literature 
 * Detailed summaries of each selected paper, organized by the categories outlined above.
 * An in-depth discussion of emerging research trends and potential future directions.
   
-
 ## 📜 License
 
 The SurVis framework is provided under its original license (please refer to the [SurVis repository](https://github.com/fabian-beck/survis) for specific details, typically MIT).
