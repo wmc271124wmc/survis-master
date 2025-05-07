@@ -1,111 +1,112 @@
 ﻿const generatedBibEntries = {
     "Chan2023ChatEval": {
-        "abstract": "This paper introduces ChatEval, a multi-agent LLM framework designed to improve text evaluation by simulating collaborative human assessment processes. Recognizing the limitations of single LLM evaluators and the cost of human annotation, ChatEval employs a team of LLM agents, each assigned a distinct persona (e.g., Critic, Scientist), to autonomously discuss and evaluate the quality of generated text over multiple rounds.",
-        "author": "Chan, Chi-Min and Chen, Weize and others",
+        "abstract": "Text evaluation has historically posed significant challenges, often demanding substantial labor and time cost. With the emergence of large language models (LLMs), researchers have explored LLMs' potential as alternatives for human evaluation. While these single-agent-based approaches show promise, experimental results suggest that further advancements are needed to bridge the gap between their current effectiveness and human-level evaluation quality. Recognizing that best practices of human evaluation processes often involve multiple human annotators collaborating in the evaluation, we resort to a multi-agent debate framework, moving beyond single-agent prompting strategies. The multi-agent-based approach enables a group of LLMs to synergize with an array of intelligent counterparts, harnessing their distinct capabilities and expertise to enhance efficiency and effectiveness in handling intricate tasks. In this paper, we construct a multi-agent referee team called ChatEval to autonomously discuss and evaluate the quality of generated responses from different models on open-ended questions and traditional natural language generation (NLG) tasks. Our analysis shows that ChatEval transcends mere textual scoring, offering a human-mimicking evaluation process for reliable assessments. Our code is available at https://github.com/thunlp/ChatEval",
+        "author": "Chi-Min Chan, Weize Chen, Yusheng Su, Jianxuan Yu, Wei Xue, Shanghang Zhang, Jie Fu, Zhiyuan Liu",
         "journal": "arXiv preprint",
         "keywords": "type:system, debate-based, evaluation, text-assessment, collaborative-assessment",
         "series": "arXiv:2308.07201v1",
         "title": "ChatEval: Towards Better LLM-Based Evaluators Through Multi-Agent Debate",
         "type": "article",
-        "url": "https://github.com/chanchimin/ChatEval",
+        "url": "https://doi.org/10.48550/arXiv.2308.07201",
         "year": "2023"
     },
     "Du2023Multiagent": {
-        "abstract": "This paper introduces a method where multiple language model (LLM) instances engage in a multi-round debate to enhance the factual accuracy and reasoning capabilities of their responses. The core idea is that given a query, several LLM agents independently propose answers; subsequently, each agent critiques the others' responses and refines its own, iterating this process to converge on a common, improved final answer.",
-        "author": "Du, Yilun and Li, Shuang and Torralba, Antonio and Mordatch, Igor and Tenenbaum, Joshua B.",
+        "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities in language generation, understanding, and few-shot learning in recent years. An extensive body of work has explored how their performance may be further improved through the tools of prompting, ranging from verification, self-consistency, or intermediate scratchpads. In this paper, we present a complementary approach to improve language responses where multiple language model instances propose and debate their individual responses and reasoning processes over multiple rounds to arrive at a common final answer. Our findings indicate that this approach significantly enhances mathematical and strategic reasoning across a number of tasks. We also demonstrate that our approach improves the factual validity of generated content, reducing fallacious answers and hallucinations that contemporary models are prone to. Our approach may be directly applied to existing black-box models and uses identical procedure and prompts for all tasks we investigate. Overall, our findings suggest that such \"society of minds\" approach has the potential to significantly advance the capabilities of LLMs and pave the way for further breakthroughs in language generation and understanding.",
+        "author": "Yilun Du, Shuang Li, Antonio Torralba, Joshua B. Tenenbaum, Igor Mordatch",
         "journal": "arXiv preprint",
         "keywords": "type:method, debate-based, reasoning, factuality, no-explicit-memory, convergent-reasoning",
         "series": "arXiv:2305.14325v1",
         "title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
         "type": "article",
-        "url": "https://composable-models.github.io/llm_debate/",
+        "url": "https://doi.org/10.48550/arXiv.2305.14325",
         "year": "2023"
     },
     "Fu2023Negotiation": {
-        "abstract": "This paper investigates whether multiple Large Language Models (LLMs) can autonomously improve each other's negotiation skills through self-play and AI-generated feedback. The core concept involves two LLMs role-playing as a buyer and a seller negotiating over a product, with a third LLM acting as a critic providing natural language feedback to one player for strategy improvement in subsequent rounds, a method termed In-Context Learning from AI Feedback (ICL-AIF).",
-        "author": "Fu, Yao and Khot, Tushar and Peng, Hao and Lapata, Mirella",
+        "abstract": "We study whether multiple large language models (LLMs) can autonomously improve each other in a negotiation game by playing, reflecting, and criticizing. We are interested in this question because if LLMs were able to improve each other, it would imply the possibility of creating strong AI agents with minimal human intervention. We ask two LLMs to negotiate with each other, playing the roles of a buyer and a seller, respectively. They aim to reach a deal with the buyer targeting a lower price and the seller a higher one. A third language model, playing the critic, provides feedback to a player to improve the player's negotiation strategies. We let the two agents play multiple rounds, using previous negotiation history and AI feedback as in-context demonstrations to improve the model's negotiation strategy iteratively. We use different LLMs (GPT and Claude) for different roles and use the deal price as the evaluation metric. Our experiments reveal multiple intriguing findings: (1) Only a subset of the language models we consider can self-play and improve the deal price from AI feedback, weaker models either do not understand the game's rules or cannot incorporate AI feedback for further improvement. (2) Models' abilities to learn from the feedback differ when playing different roles. For example, it is harder for Claude-instant to improve as the buyer than as the seller. (3) When unrolling the game to multiple rounds, stronger agents can consistently improve their performance by meaningfully using previous experiences and iterative AI feedback, yet have a higher risk of breaking the deal. We hope our work provides insightful initial explorations of having models autonomously improve each other with game playing and AI feedback.",
+        "author": "Yao Fu, Hao Peng, Tushar Khot, Mirella Lapata",
         "journal": "arXiv preprint",
         "keywords": "type:method, self-improvement, negotiation, self-play, in-context-experience, feedback-learning",
         "series": "arXiv:2305.10142v1",
         "title": "Improving Language Model Negotiation with Self-Play and In-Context Learning from AI Feedback",
         "type": "article",
-        "url": "https://github.com/FranxYao/GPT-Bargaining",
+        "url": "https://doi.org/10.48550/arXiv.2305.10142",
         "year": "2023"
     },
-    "Hong2023MetaGPT": {
-        "abstract": "This paper introduces MetaGPT, a meta-programming framework that integrates Standardized Operating Procedures (SOPs) into LLM-based multi-agent collaborations to enhance complex problem-solving, particularly in software development. MetaGPT assigns distinct roles (e.g., Product Manager, Architect, Engineer, QA Engineer) to agents who follow streamlined workflows, producing structured outputs like documents and diagrams rather than relying solely on unstructured dialogue, thus minimizing errors and hallucinations.",
-        "author": "Hong, Sirui and Zhuge, Mingchen and others",
+    "Hong2024MetaGPT": {
+        "abstract": "Remarkable progress has been made on automated problem solving through societies of agents based on large language models (LLMs). Existing LLM-based multi-agent systems can already solve simple dialogue tasks. Solutions to more complex tasks, however, are complicated through logic inconsistencies due to cascading hallucinations caused by naively chaining LLMs. Here we introduce MetaGPT, an innovative meta-programming framework incorporating efficient human workflows into LLM-based multi-agent collaborations. MetaGPT encodes Standardized Operating Procedures (SOPs) into prompt sequences for more streamlined workflows, thus allowing agents with human-like domain expertise to verify intermediate results and reduce errors. MetaGPT utilizes an assembly line paradigm to assign diverse roles to various agents, efficiently breaking down complex tasks into subtasks involving many agents working together. On collaborative software engineering benchmarks, MetaGPT generates more coherent solutions than previous chat-based multi-agent systems. Our project can be found at https://github.com/FoundationAgents/MetaGPT",
+        "author": "Sirui Hong, Mingchen Zhuge, Jiaqi Chen, Xiawu Zheng, Yuheng Cheng, Ceyao Zhang, Jinlin Wang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, Liyang Zhou, Chenyu Ran, Lingfeng Xiao, Chenglin Wu, J\u00fcrgen Schmidhuber",
         "journal": "arXiv preprint",
         "keywords": "type:system, role-based, code-generation, SOP, software-development, workflow-integration",
         "series": "arXiv:2308.00352v7",
         "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
         "type": "article",
-        "url": "https://github.com/geekan/MetaGPT",
-        "year": "2023"
+        "url": "https://arxiv.org/abs/2308.00352",
+        "year": "2024"
     },
     "Li2023CAMEL": {
-        "abstract": "This paper introduces CAMEL, a novel \"role-playing\" communicative agent framework designed to facilitate autonomous cooperation among large language model (LLM) agents and explore their \"cognitive\" processes. The core concept involves using \"inception prompting\"\u2014comprising task specifier, assistant system, and user system prompts\u2014to guide chat agents (an AI assistant and an AI user) toward completing a specified task derived from an initial human idea, while maintaining alignment with human intentions and minimizing direct human intervention.",
-        "author": "Li, Guohao and Hammoud, Hasan Abed Al Kader and Itani, Hani and Khizbullin, Dmitrii and Ghanem, Bernard",
+        "abstract": "The rapid advancement of chat-based language models has led to remarkable progress in complex task-solving. However, their success heavily relies on human input to guide the conversation, which can be challenging and time-consuming. This paper explores the potential of building scalable techniques to facilitate autonomous cooperation among communicative agents, and provides insight into their \"cognitive\" processes. To address the challenges of achieving autonomous cooperation, we propose a novel communicative agent framework named role-playing. Our approach involves using inception prompting to guide chat agents toward task completion while maintaining consistency with human intentions. We showcase how role-playing can be used to generate conversational data for studying the behaviors and capabilities of a society of agents, providing a valuable resource for investigating conversational language models. In particular, we conduct comprehensive studies on instruction-following cooperation in multi-agent settings. Our contributions include introducing a novel communicative agent framework, offering a scalable approach for studying the cooperative behaviors and capabilities of multi-agent systems, and open-sourcing our library to support research on communicative agents and beyond: https://github.com/camel-ai/camel",
+        "author": "Guohao Li, Hasan Abed Al Kader Hammoud, Hani Itani, Dmitrii Khizbullin, Bernard Ghanem",
         "journal": "arXiv preprint",
         "keywords": "type:method, role-based, inception-prompting, code-generation, in-context-experience, cooperative-agents",
         "series": "arXiv:2303.17760v2",
         "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
         "type": "article",
-        "url": "https://github.com/camel-ai/camel",
+        "url": "https://doi.org/10.48550/arXiv.2303.17760",
         "year": "2023"
     },
-    "Liang2023Divergent": {
-        "abstract": "This paper introduces the \"Degeneration-of-Thought\" (DoT) problem, where Large Language Models (LLMs) in self-reflection cycles become entrenched in their initial, potentially incorrect, solutions and fail to generate novel thoughts. To counter this, the authors propose a Multi-Agent Debate (MAD) framework where multiple LLM agents (typically two debaters\u2014affirmative and negative\u2014and a judge) engage in a \"tit for tat\" argumentation process to foster divergent thinking and arrive at a more accurate solution.",
-        "author": "Liang, Tian and He, Zhiwei and Jiao, Wenxiang and others",
+    "Liang2024Divergent": {
+        "abstract": "Modern large language models (LLMs) like ChatGPT have shown remarkable performance on general language tasks but still struggle on complex reasoning tasks, which drives the research on cognitive behaviors of LLMs to explore human-like problem-solving strategies. Along this direction, one representative strategy is self-reflection, which asks an LLM to refine the solution with the feedback generated by itself iteratively. However, our study shows that such reflection-style methods suffer from the Degeneration-of-Thought (DoT) problem: once the LLM has established confidence in its solutions, it is unable to generate novel thoughts later through reflection even if its initial stance is incorrect. To address the DoT problem, we propose a Multi-Agent Debate (MAD) framework, in which multiple agents express their arguments in the state of \"tit for tat\" and a judge manages the debate process to obtain a final solution. Clearly, our MAD framework encourages divergent thinking in LLMs which would be helpful for tasks that require deep levels of contemplation. Experiment results on two challenging datasets, commonsense machine translation and counter-intuitive arithmetic reasoning, demonstrate the effectiveness of our MAD framework. Extensive analyses suggest that the adaptive break of debate and the modest level of \"tit for tat\" state are required for MAD to obtain good performance. Moreover, we find that LLMs might not be a fair judge if different LLMs are used for agents. Code is available at https://github.com/Skytliang/Multi-Agents-Debate",
+        "author": "Tian Liang, Zhiwei He, Wenxiang Jiao, Xing Wang, Yan Wang, Rui Wang, Yujiu Yang, Shuming Shi, Zhaopeng Tu",
         "journal": "arXiv preprint",
         "keywords": "type:method, debate-based, reasoning, degeneration-of-thought, no-explicit-memory, divergent-thinking",
         "series": "arXiv:2305.19118v4",
         "title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
         "type": "article",
-        "url": "https://github.com/Skytliang/Multi-Agents-Debate",
-        "year": "2023"
+        "url": "https://doi.org/10.48550/arXiv.2305.19118",
+        "year": "2024"
     },
     "Shinn2023Reflexion": {
-        "abstract": "This paper introduces Reflexion, a novel framework where language agents are reinforced through linguistic feedback rather than weight updates, by verbally reflecting on task feedback and storing these reflections in an episodic memory to enhance future decision-making. Key contributions include this \"verbal reinforcement\" paradigm, empirical evidence of self-reflection's utility in rapid learning for complex tasks, the introduction of the LeetcodeHardGym benchmark, and state-of-the-art results in code generation.",
-        "author": "Shinn, Noah and Cassano, Federico and Berman, Edward and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu",
+        "abstract": "Large language models (LLMs) have been increasingly used to interact with external environments (e.g., games, compilers, APIs) as goal-driven agents. However, it remains challenging for these language agents to quickly and efficiently learn from trial-and-error as traditional reinforcement learning methods require extensive training samples and expensive model fine-tuning. We propose Reflexion, a novel framework to reinforce language agents not by updating weights, but instead through linguistic feedback. Concretely, Reflexion agents verbally reflect on task feedback signals, then maintain their own reflective text in an episodic memory buffer to induce better decision-making in subsequent trials. Reflexion is flexible enough to incorporate various types (scalar values or free-form language) and sources (external or internally simulated) of feedback signals, and obtains significant improvements over a baseline agent across diverse tasks (sequential decision-making, coding, language reasoning). For example, Reflexion achieves a 91% pass@1 accuracy on the HumanEval coding benchmark, surpassing the previous state-of-the-art GPT-4 that achieves 80%. We also conduct ablation and analysis studies using different feedback signals, feedback incorporation methods, and agent types, and provide insights into how they affect performance.",
+        "author": "Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao",
         "journal": "arXiv preprint",
         "keywords": "type:method, self-improvement, verbal-reinforcement, code-generation, external-memory, reinforcement-learning",
         "series": "arXiv:2303.11366v4",
         "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
         "type": "article",
-        "url": "https://github.com/noahshinn024/reflexion",
+        "url": "https://doi.org/10.48550/arXiv.2303.11366",
         "year": "2023"
     },
     "Talebirad2023Collaboration": {
-        "abstract": "This paper proposes a novel framework for enhancing Large Language Model (LLM) capabilities through a multi-agent system where multiple \"Intelligent Generative Agents\" (IGAs), each with distinct attributes (language model, role, state, creation/halting abilities) and access to plugins, collaborate to tackle complex tasks. The framework, represented as a graph of agents and plugins, supports dynamic agent addition, inter-agent and self-feedback mechanisms, stateless \"oracle\" agents for specific functions, and supervisory control.",
-        "author": "Talebirad, Yashar and Nadiri, Amirhossein",
+        "abstract": "In this paper, we present a novel framework for enhancing the capabilities of large language models (LLMs) by leveraging the power of multi-agent systems. Our framework introduces a collaborative environment where multiple intelligent agent components, each with distinctive attributes and roles, work together to handle complex tasks more efficiently and effectively. We demonstrate the practicality and versatility of our framework through case studies in artificial general intelligence (AGI), specifically focusing on the Auto-GPT and BabyAGI models. We also examine the \"Gorilla\" model, which integrates external APIs into the LLM. Our framework addresses limitations and challenges such as looping issues, security risks, scalability, system evaluation, and ethical considerations. By modeling various domains such as courtroom simulations and software development scenarios, we showcase the potential applications and benefits of our proposed multi-agent system. Our framework provides an avenue for advancing the capabilities and performance of LLMs through collaboration and knowledge exchange among intelligent agents.",
+        "author": "Yashar Talebirad, Amirhossein Nadiri",
         "journal": "arXiv preprint",
         "keywords": "type:framework, role-based, code-generation, plugin-integration, conceptual-architecture",
         "series": "arXiv:2306.03314v1",
         "title": "Multi-Agent Collaboration: Harnessing the Power of Intelligent LLM Agents",
         "type": "article",
+        "url": "https://doi.org/10.48550/arXiv.2306.03314",
         "year": "2023"
     },
-    "Wang2023CognitiveSynergy": {
-        "abstract": "This paper introduces Solo Performance Prompting (SPP), a zero-shot method that enables a single Large Language Model (LLM) to act as a \"cognitive synergist\" by simulating multi-turn self-collaboration among multiple dynamically identified personas. This approach involves the LLM identifying relevant personas for a given task, engaging in a brainstorming phase where these personas share knowledge, and then undergoing an iterative collaboration led by an \"AI Assistant\" persona that proposes solutions and refines them based on feedback from other simulated personas.",
-        "author": "Wang, Zhenhailong and Mao, Shaoguang and Wu, Wenshan and Ge, Tao and Wei, Furu and Ji, Heng",
+    "Wang2024CognitiveSynergy": {
+        "abstract": "Human intelligence thrives on cognitive synergy, where collaboration among different minds yield superior outcomes compared to isolated individuals. In this work, we propose Solo Performance Prompting (SPP), which transforms a single LLM into a cognitive synergist by engaging in multi-turn self-collaboration with multiple personas. A cognitive synergist is an intelligent agent that collaboratively combines multiple minds' strengths and knowledge to enhance problem-solving in complex tasks. By dynamically identifying and simulating different personas based on task inputs, SPP unleashes the potential of cognitive synergy in LLMs. Our in-depth analysis shows that assigning multiple fine-grained personas in LLMs improves problem-solving abilities compared to using a single or fixed number of personas. We evaluate SPP on three challenging tasks: Trivia Creative Writing, Codenames Collaborative, and Logic Grid Puzzle, encompassing both knowledge-intensive and reasoning-intensive types. Unlike previous works, such as Chain-of-Thought, that solely enhance the reasoning abilities in LLMs, experimental results demonstrate that SPP effectively reduces factual hallucination, and maintains strong reasoning capabilities. Additionally, comparative experiments show that cognitive synergy only emerges in GPT-4 and does not appear in less capable models, such as GPT-3.5-turbo and Llama2-13b-chat, which draws an interesting analogy to human development. Code, data, and prompts can be found at: https://github.com/MikeWangWZHL/Solo-Performance-Prompting",
+        "author": "Zhenhailong Wang, Shaoguang Mao, Wenshan Wu, Tao Ge, Furu Wei, Heng Ji",
         "journal": "arXiv preprint",
         "keywords": "type:method, self-improvement, reasoning, multi-persona, cognitive-synergy, emergent-abilities",
         "series": "arXiv:2307.05300v4",
         "title": "Unleashing the Emergent Cognitive Synergy in Large Language Models: A Task-Solving Agent through Multi-Persona Self-Collaboration",
         "type": "article",
-        "url": "https://github.com/MikeWangWZHL/Solo-Performance-Prompting.git",
-        "year": "2023"
+        "url": "https://doi.org/10.48550/arXiv.2307.05300",
+        "year": "2024"
     },
     "Xu2023Werewolf": {
-        "abstract": "This paper proposes a tuning-free framework for enabling frozen Large Language Models (LLMs) to play communication games, using the game \"Werewolf\" as a case study. The core of the framework involves LLM agents for each game role making decisions based on comprehensive prompts that include game rules, role descriptions, recent and heuristically selected informative messages, an agent-generated reflection on the game state, and suggestions extracted from a pool of past game experiences.",
-        "author": "Xu, Yuzhuang and Wang, Shuo and Li, Peng and others",
+        "abstract": "Communication games, which we refer to as incomplete information games that heavily depend on natural language communication, hold significant research value in fields such as economics, social science, and artificial intelligence. In this work, we explore the problem of how to engage large language models (LLMs) in communication games, and in response, propose a tuning-free framework. Our approach keeps LLMs frozen, and relies on the retrieval and reflection on past communications and experiences for improvement. An empirical study on the representative and widely-studied communication game, ``Werewolf'', demonstrates that our framework can effectively play Werewolf game without tuning the parameters of the LLMs. More importantly, strategic behaviors begin to emerge in our experiments, suggesting that it will be a fruitful journey to engage LLMs in communication games and associated domains.",
+        "author": "Yuzhuang Xu, Shuo Wang, Peng Li, Fuwen Luo, Xiaolong Wang, Weidong Liu, Yang Liu",
         "journal": "arXiv preprint",
         "keywords": "type:framework, game-theoretic, negotiation, strategic-gameplay, external-memory, experience-pools",
         "series": "arXiv:2309.04658v2",
         "title": "Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf",
         "type": "article",
-        "url": "https://github.com/xuyuzhuang11/Werewolf",
+        "url": "https://doi.org/10.48550/arXiv.2309.04658",
         "year": "2023"
     }
 };
